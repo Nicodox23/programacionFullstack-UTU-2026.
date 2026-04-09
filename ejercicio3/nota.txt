@@ -1,0 +1,7 @@
+7
+
+Reconocés correctamente las principales etiquetas semánticas como main, section, article, nav y footer.
+
+Hay que seguir trabajando para ampliar el reconocimiento de otras estructuras como div y span.
+
+Buen trabajo, seguí así.
