@@ -1,0 +1,28 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    gap: 20px;
+}
+.n1 > div{
+    height: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.n1 > div > div{
+    display: flex;
+    justify-content: flex-start;
+}
+i{
+    font-size: 0.6rem;
+}
