@@ -1,0 +1,3 @@
+7
+
+Hay que afinar un poco mas los estilos, en el nivel 2, falto el fondo de cada 'card', para que se visualize mejor.
