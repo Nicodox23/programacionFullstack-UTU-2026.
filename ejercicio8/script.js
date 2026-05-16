@@ -22,16 +22,19 @@ if (num % 2 === 0) {
     alert(num + " es un numero impar");
 }
 
- var num = parseInt(prompt("Ingrese un número"), 10);
- if (num < 5)
-    {alert(num + " insuficiente ");}
- else if (num >= 5 && num <= 7) {
-    alert(num + " Aceptable ");
-    } else if (num > 7 && num <= 10) {
-        alert(num + " muy bien ");
-    }
- 
+var num = parseInt(prompt("Ingrese un número"), 10);
 
+if (num < 5) {
+    alert(num + " insuficiente ");
+} else if (num >= 5 && num <= 7) {
+    alert(num + " Aceptable ");
+} else if (num > 7 && num <= 10) {
+    alert(num + " muy bien ");
+}
+
+for (var i = 1; i <= 10; i++) {
+    alert("Contador: " + i);
+}
 
 
  
