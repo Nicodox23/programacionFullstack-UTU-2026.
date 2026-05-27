@@ -1,3 +1,9 @@
+
+
+let botonTitulo = document.querySelector("#boton-titulo");
+
+botonTitulo.addEventListener("click", cambiarTexto);
+
 function cambiarTexto() {
      document.getElementById("ejercicio10pe").textContent = "el titlo cambio";
 }
@@ -11,7 +17,7 @@ function cambiarTexto3() {
 }
 function mostrarResultado() {
 let texto = document.getElementById("mensaje").value;
- document.getElementById("resultado").textContent = "El resultado es: " + texto;     
+  alert(document.getElementById("resultado").textContent = "El resultado es: " + texto);     
 
 }
 
@@ -26,5 +32,19 @@ function cambiarEstilos()  {
     elemento.classList.remove("texto2");
 }
 function cambiarFondo() {
-    document.body.style.backgroundColor = "black";
+     const elemento = document.querySelector("body");
+    elemento.classList.toggle("cambiarFondo");
+
+}
+{
+function agregarelemento() {
+    const nuevoElemento = document.createElement("p");
+    nuevoElemento.textContent = "Nuevo elemento agregao";
+    document.body.appendChild(nuevoElemento);
+
+}
+}function crearelemento() {
+    const nuevoElemento = document.createElement("p");
+    nuevoElemento.textContent = "Nuevo elemento creado";
+    document.body.appendChild(nuevoElemento);
 }
