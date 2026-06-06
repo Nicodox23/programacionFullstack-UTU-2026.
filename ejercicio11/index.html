@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi colección</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Mi colección favorita</h1>
+
+    <p>
+        Aquí podrás guardar y organizar tus videojuegos,
+        películas y series favoritas.
+    </p>
+
+    <form class="contenidoForm">
+
+        <input class="nombre" type="text" placeholder="Nombre">
+
+        <br><br>
+
+        <input class="descripcion" type="text" placeholder="Descripción">
+
+        <br><br>
+
+        <label>Tipo:</label>
+
+        <select class="tipo1">
+            <option value="Videojuego">Videojuego</option>
+            <option value="Película">Película</option>
+            <option value="Serie">Serie</option>
+        </select>
+
+        <br><br>
+
+        <label>Estado:</label>
+
+        <select class="estado1">
+            <option value="Pendiente">Pendiente</option>
+            <option value="En progreso">En progreso</option>
+            <option value="Terminado">Terminado</option>
+        </select>
+
+        <br><br>
+
+        <input
+            class="cantidad"
+            type="number"
+            placeholder="Calificación (1-5)"
+            min="1"
+            max="5"
+        >
+
+        <br><br>
+
+        <input
+            class="imagen"
+            type="text"
+            placeholder="URL de la imagen"
+        >
+
+        <br><br>
+
+        <button class="btn">Agregar</button>
+
+    </form>
+
+    <p class="error"></p>
+
+    <p>Elementos agregados: <span class="contador">0</span></p>
+
+<button id="modoOscuro">Cambiar modo</button>
+
+<h3>Filtros</h3>
+
+<button class="filtro" data-filtro="todos">Todos</button>
+<button class="filtro" data-filtro="Videojuego">Videojuegos</button>
+<button class="filtro" data-filtro="Película">Películas</button>
+<button class="filtro" data-filtro="Serie">Series</button>
+<button class="filtro" data-filtro="Pendiente">Pendientes</button>
+<button class="filtro" data-filtro="En progreso">En progreso</button>
+<button class="filtro" data-filtro="Terminado">Terminados</button>
+
+<div class="tarjetas"></div>
+
+<p class="error"></p>
+
+    <div class="tarjetas"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
