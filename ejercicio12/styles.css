@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    min-height: 100vh;
+
+    background-image: url("https://i.pinimg.com/webp85/736x/dc/08/be/dc08bec6bc6c459ec286451af0ceccb3.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.tarjeta {
+    width: 420px;
+    background: rgba(255, 248, 244, 0.95);
+
+    backdrop-filter: blur(6px);
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15),
+        0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    color: #7a5642;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.gato {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 4px solid #f3ddd2;
+
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#traerGato {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    background: #d8a48f;
+    color: white;
+}
+
+.botones-voto {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.megusta,
+.nomegusta {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.megusta {
+    background: #c8a58b;
+    color: white;
+}
+
+.nomegusta {
+    background: #b78472;
+    color: white;
+}
+
+.contadores {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contador {
+    flex: 1;
+
+    background: #f5e8e1;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    color: #6b4f3f;
+}
+
+#mensaje {
+    margin-top: 20px;
+
+    min-height: 24px;
+
+    color: #7a5642;
+
+    font-weight: bold;
+}
